@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destek — BioArcade</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0D0F16; color: #F2F5FA;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .4rem; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .6rem; color: #4C8DFF; }
+  p, li { color: #F2F5FA; }
+  strong { color: #fff; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  hr { border: 0; border-top: 1px solid #263048; margin: 2rem 0; }
+  a { color: #4C8DFF; }
+  nav { display: flex; gap: .5rem; align-items: center;
+        padding: 1rem 1.25rem; border-bottom: 1px solid #263048;
+        background: #161A24; position: sticky; top: 0; }
+  nav .home { color: #98A2B8; text-decoration: none; margin-right: auto; }
+  button { font: inherit; cursor: pointer; border: 1px solid #263048;
+           background: transparent; color: #98A2B8;
+           padding: .35rem .8rem; border-radius: 999px; }
+  button[aria-pressed="true"] { background: #4C8DFF; border-color: #4C8DFF;
+                                color: #08111f; font-weight: 600; }
+  .doc[hidden] { display: none; }
+</style>
+</head>
+<body>
+<nav>
+  <a class="home" href="index.html">BioArcade</a>
+  <button id="tr" aria-pressed="true">Türkçe</button>
+  <button id="en" aria-pressed="false">English</button>
+</nav>
+<main>
+<article class="doc" id="doc-tr">
+<h1>Destek — BioArcade</h1>
+<p><strong>İletişim:</strong> bilalsanli129@gmail.com <strong>Yayıncı:</strong> BioStudio, Türkiye</p>
+<p>Her mesajı okuyoruz. Bir hata bildiriyorsan telefonunun modelini ve ne olduğunu yaz, bize en çok yardımcı olan şey bu.</p>
+<hr>
+<h2>İlerlemem nerede saklanıyor?</h2>
+<p>Yalnızca bu telefonda. Hesap yok, sunucu yok. Oyunu silersen ilerlemen de silinir ve başka bir telefona taşınamaz.</p>
+<h2>Satın aldığım bir şey görünmüyor</h2>
+<p><strong>Mağaza → Satın alımları geri yükle</strong> düğmesine dokun (rafın en altında). "Her şey açık" paketi gibi tek seferlik satın alımlar geri gelir.</p>
+<p>Altın ve elmas harcandığı anda tüketilen şeyler olduğu için geri yüklenmez. Bir satın alımın hiç ulaşmadığını düşünüyorsan, mağazanın verdiği sipariş numarasıyla bize yaz.</p>
+<h2>İade istiyorum</h2>
+<p>İadeler mağaza üzerinden yapılıyor: Android'de Google Play, iPhone'da App Store. Ödemeyi biz değil mağaza aldığı için iadeyi de mağaza işliyor.</p>
+<h2>Reklamlar</h2>
+<p>Oyunda tek bir reklam var: bir koşuyu kaybettiğinde devam etmek için kendi isteğinle izlediğin video. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deysen reklam tercihlerini <strong>Ayarlar → Yasal → Reklam tercihleri</strong> kısmından istediğin zaman değiştirebilirsin.</p>
+<h2>Verilerimi silmek istiyorum</h2>
+<p><strong>Ayarlar → Verilerimi sil</strong>, ardından onaylamak için tekrar dokun. Bu, telefondaki ilerlemeni siler ve geri alınamaz.</p>
+<h2>Dil</h2>
+<p><strong>Ayarlar → Dil</strong>. Oyun on iki dilde.</p>
+<h2>Gizlilik ve koşullar</h2>
+<p>[Gizlilik Politikası](privacy.html) · [Kullanım Koşulları](terms.html)</p>
+</article>
+<article class="doc" id="doc-en" hidden>
+<h1>Support — BioArcade</h1>
+<p><strong>Contact:</strong> bilalsanli129@gmail.com <strong>Publisher:</strong> BioStudio, Türkiye</p>
+<p>Every message is read. If you are reporting a bug, tell us your phone model and what happened — that is the thing that helps most.</p>
+<hr>
+<h2>Where is my progress kept?</h2>
+<p>On this phone only. There is no account and no server. Uninstalling the game deletes your progress, and it cannot be moved to another phone.</p>
+<h2>Something I bought is missing</h2>
+<p>Tap <strong>Store → Restore purchases</strong>, at the bottom of the shelf. One-time purchases such as the "Everything unlocked" pack come back.</p>
+<p>Gold and gems are used up as you spend them, so they are not restored. If you think a purchase never arrived at all, write to us with the order number the store gave you.</p>
+<h2>I want a refund</h2>
+<p>Refunds go through the store: Google Play on Android, the App Store on iPhone. The store takes the payment, not us, so the store processes the refund.</p>
+<h2>Ads</h2>
+<p>There is one advert in the game: a video you choose to watch to continue a run you lost. In the European Economic Area, the United Kingdom and Switzerland you can change your ad choices at any time from <strong>Settings → Legal → Ad preferences</strong>.</p>
+<h2>I want my data deleted</h2>
+<p><strong>Settings → Delete my data</strong>, then tap again to confirm. This erases your progress on this phone and cannot be undone.</p>
+<h2>Language</h2>
+<p><strong>Settings → Language</strong>. The game is in twelve languages.</p>
+<h2>Privacy and terms</h2>
+<p>[Privacy Policy](privacy.html) · [Terms of Use](terms.html)</p>
+</article>
+</main>
+<script>
+  var docs = { tr: document.getElementById('doc-tr'), en: document.getElementById('doc-en') };
+  var tabs = { tr: document.getElementById('tr'), en: document.getElementById('en') };
+  function show(lang) {
+    docs.tr.hidden = lang !== 'tr';
+    docs.en.hidden = lang !== 'en';
+    tabs.tr.setAttribute('aria-pressed', String(lang === 'tr'));
+    tabs.en.setAttribute('aria-pressed', String(lang === 'en'));
+    document.documentElement.lang = lang;
+  }
+  tabs.tr.onclick = function () { show('tr'); };
+  tabs.en.onclick = function () { show('en'); };
+  // Turkish for a Turkish browser, English for everybody else: the full text
+  // only exists in those two, and English is the one more people can read.
+  show((navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+</script>
+</body>
+</html>
